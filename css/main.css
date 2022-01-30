@@ -93,11 +93,11 @@ body{
 .div-box .tab-content .table tbody td{
   font-size: 18px;
 }
-.div-box .tab-content .table tr td:last-child{
+/* .div-box .tab-content .table tr td:last-child{
   min-width: 120px; 
   text-align: center !important;
   vertical-align: middle !important;
-}
+} */
 .div-box .tab-content .table tr td.des{
   max-width: 650px;
   overflow: hidden;
@@ -258,4 +258,7 @@ body{
 }
 .note-editable.card-block{
   min-height: 200px;
+}
+.search-label{
+  font-size: 20px;
 }

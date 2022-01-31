@@ -150,10 +150,12 @@
                         <div class="row mb-2">
                             <div class="col-sm-12">
                                 <h1 class="m-0">
-                                    <strong> ชื่อกลุ่ม </strong>   : RSU Science 001
-                                    <span class="pl-4">คณะ : วิทยาศาสตร์</span>  
-                                    <span class="pl-4">จำนวนนักศึกษา : 103 คน</span>  
+                                    <strong> ข้อมูลนักศึกษา  </strong>  
+                                    <a href="student-group-list.html" class="float-right">
+                                        <i class="fal fa-chevron-left fa-xs"></i> ย้อนกลับ
+                                    </a> 
                                 </h1> 
+
                             </div>  
                         </div> 
                     </div> 
@@ -161,200 +163,79 @@
                 <section class="content">
                     <div class="container-fluid">
                         <div class="div-box card-outline card-info p-4">
-                  
-                            <!-- <ul class="nav nav-tabs" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">รายการที่อนุมัติแล้ว</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#tab2" role="tab" data-toggle="tab">รายการรออนุมัติ <span class="right badge badge-danger">3</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#tab3" role="tab" data-toggle="tab">รายการที่ยกเลิก</a>
-                                </li>
-                            </ul>  -->
-            
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade show active" id="tab1">
-                                    <div class="col-12">  
-                                        <h4>
-                                            <strong>อาจารย์ที่ปรึกษา</strong> 
-                                            <ol>
-                                                <li>ผศ.ดร. เอกชัย ใจดี</li>
-                                                <li>ผศ. นิคม เกษมสาน</li>
-                                            </ol> 
-                                        </h4> 
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-6 col-12">
+                                        <form action="">
+                                            <div class="form-group form-profile" style="background: url(images/profile.png);"> </div>
+                                            <div class="form-group row mb-0">
+                                                <div class="col-xl-2 text-right">
+                                                    <label for="">รหัสนักศึกษา :</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <label for="">6439300138</label> 
+                                                </div> 
+                                            </div> 
+                                            <div class="form-group row mb-0">
+                                                <div class="col-xl-2 text-right">
+                                                    <label for="">ชื่อ-นามสกุล :</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <label for="">อดิศร ศรีสุธรรม</label>  <br>
+                                                    <label for="">Adisorn Srisutam</label> 
+                                                </div> 
+                                            </div> 
+                                            <div class="form-group row mb-0">
+                                                <div class="col-xl-2 text-right">
+                                                    <label for="">คณะ :</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <label for="">วิทยาศาสตร์</label> 
+                                                </div> 
+                                            </div>  
+                                            <div class="form-group row mb-0">
+                                                <div class="col-xl-2 text-right">
+                                                    <label for="">สาขา :</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <label for="">วิทยาการคอมพิวเตอร์</label> 
+                                                </div> 
+                                            </div> 
+                                            <div class="form-group row mb-0">
+                                                <div class="col-xl-2 text-right">
+                                                    <label for="">ปริญญา :</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <label for="">ปริญญาตรี  </label> 
+                                                </div> 
+                                            </div> 
+                                            <div class="form-group row mb-0">
+                                                <div class="col-xl-2 text-right">
+                                                    <label for="">อีเมล :</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <label for="">adisorn-srt243@rsu.ac.th  </label> 
+                                                </div> 
+                                            </div> 
+                                            <div class="form-group row mb-0">
+                                                <div class="col-xl-2 text-right">
+                                                    <label for="">เบอร์โทรศัพท์ :</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <label for="">089-484-4842  </label> 
+                                                </div> 
+                                            </div> 
 
-                                        <hr>
-                                    </div>
-                                    <div class="col-12 search-label">
-                                        <div class="row">
-                                            <div class="col-xl-2">
-                                                <label for="">สาขา </label>
-                                                <select class="selectpicker" title="สาขา" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                    <option>เคมีประยุกต์</option>
-                                                    <option>วิชาวิทยาศาสตร์ชีวการแพทย์</option>
-                                                    <option>วิทยาการคอมพิวเตอร์และสารสนเทศ</option>
-                                                    <option>วิชาสัตววิทยา</option>
-                                                    <option>วิทยาศาสตร์ทางภายถ่าย  </option>
-                                                </select>
-                                            </div> 
-                                            <div class="col-xl-2">
-                                                <label for="">ชื่อ-นามสกุล นักศึกษา </label>
-                                                <input type="text" class="form-control"  >
-                                            </div> 
-                                            <div class="col-xl-2">
-                                                <label for="">สถานะ </label>
-                                                <select class="selectpicker" title="สถานะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                    <option>เลือกทั้งหมด</option>
-                                                    <option>นักศึกษาปกติ</option>
-                                                    <option>พักการศึกษา</option>
-                                                    <option>จบการศึกษา</option> 
-                                                </select>
-                                            </div> 
-                                            <div class="col-xl-2"> 
-                                                <label class="col-12">&nbsp; </label>
-                                                <button href="form-student-group.html" class="btn btn-primary btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา 
-                                                </button> 
-                                            </div> 
-                                        </div>
-                                    </div>
 
-                                    <br>
 
-                                    <div class="col-12 table-responsive">
-                                        <table id="tb-job" class="table table-striped  " style="width:100%">
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>รหัส</th>
-                                                    <th>ชื่อ</th>
-                                                    <th>ชั้นปี</th>
-                                                    <th>สาขา</th>  
-                                                    <th>สถานะ</th> 
-                                                    <th>&nbsp;</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr> 
-                                                    <td>1</td>
-                                                    <td>
-                                                        640019930
-                                                    </td>
-                                                    <td>
-                                                        นายอดิศร ศรีสุธรรม
-                                                    </td>
-                                                    <td> ชั้นปีที่ 3</td>
-                                                    <td>เคมีประยุกต์  </td>
-                                                    <td>   
-                                                        <span class="text-blue">นักศึกษาปกติ</span> 
-                                                    </td>    
-                                                    <td>
-                                                        <a href="student-group-list.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="far fa-id-badge"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr>  
-                                                <tr> 
-                                                    <td>2</td>
-                                                    <td>
-                                                        640019930
-                                                    </td>
-                                                    <td>
-                                                        นายอดิศร ศรีสุธรรม
-                                                    </td>
-                                                    <td> ชั้นปีที่ 3</td>
-                                                    <td>เคมีประยุกต์  </td>
-                                                    <td>   
-                                                        <span class="text-blue">นักศึกษาปกติ</span> 
-                                                    </td>        
-                                                    <td>
-                                                        <a href="student-group-list.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="far fa-id-badge"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr>  
-                                                <tr> 
-                                                    <td>3</td>
-                                                    <td>
-                                                        640019930
-                                                    </td>
-                                                    <td>
-                                                        นายอดิศร ศรีสุธรรม
-                                                    </td>
-                                                    <td> ชั้นปีที่ 1</td>
-                                                    <td>เคมีประยุกต์  </td>
-                                                    <td>   
-                                                        <span class="text-red">พักการศึกษา</span>  
-                                                    </td>        
-                                                    <td>
-                                                        <a href="student-group-list.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="far fa-id-badge"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr>   
-                                                <tr> 
-                                                    <td>4</td>
-                                                    <td>
-                                                        640019930
-                                                    </td>
-                                                    <td>
-                                                        นายอดิศร ศรีสุธรรม
-                                                    </td>
-                                                    <td> ชั้นปีที่ 3</td>
-                                                    <td>เคมีประยุกต์  </td>
-                                                    <td>   
-                                                        <span class="text-blue">นักศึกษาปกติ</span> 
-                                                    </td>        
-                                                    <td>
-                                                        <a href="student-group-list.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="far fa-id-badge"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr> 
-                                                <tr> 
-                                                    <td>5</td>
-                                                    <td>
-                                                        640019930
-                                                    </td>
-                                                    <td>
-                                                        นายอดิศร ศรีสุธรรม
-                                                    </td>
-                                                    <td> ชั้นปีที่ 3</td>
-                                                    <td>เคมีประยุกต์  </td>
-                                                    <td>   
-                                                        <span class="text-blue">นักศึกษาปกติ</span> 
-                                                    </td>        
-                                                    <td>
-                                                        <a href="student-group-list.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="far fa-id-badge"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr>   
-                                                <tr> 
-                                                    <td>6</td>
-                                                    <td>
-                                                        640019930
-                                                    </td>
-                                                    <td>
-                                                        นายอดิศร ศรีสุธรรม
-                                                    </td>
-                                                    <td> ชั้นปีที่ 3</td>
-                                                    <td>เคมีประยุกต์  </td>
-                                                    <td>   
-                                                        <span class="text-green">จบการศึกษา</span> 
-                                                    </td>        
-                                                    <td>
-                                                        <a href="student-group-list.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="far fa-id-badge"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr>                                                      
-                                            </tbody> 
-                                        </table>
+
+
+
+                                        </form>
                                     </div>
-                                </div> 
-                            </div>       
+                                </div>
+                            </div>
+                            
                         </div>
                     </div> 
                 </section> 

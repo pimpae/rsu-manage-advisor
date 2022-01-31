@@ -265,3 +265,18 @@ body{
 .olx{
   font-size: 20px;
 }
+.form-profile{
+  top: 0;
+  right: 0;
+  border: 1px solid #EA4C92;
+  position: absolute;
+  height: 200px;
+  width: 160px;
+  background-size: auto 100% !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+h1.m-0 a{
+  font-size: 20px;
+  padding-top: 10px;
+}

@@ -122,6 +122,7 @@
                                     <p>ประเมินอาจารย์ที่ปรึกษา</p>
                                 </a> 
                             </li>  
+                            </li>  
                             
                             <li class="nav-item menu-is-opening menu-open">
                                 <a href="#" class="nav-link">
@@ -149,12 +150,8 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-12">
-                                <h1 class="m-0">
-                                    <strong> ชื่อกลุ่ม </strong>   : RSU Science 001
-                                    <span class="pl-4">คณะ : วิทยาศาสตร์</span>  
-                                    <span class="pl-4">จำนวนนักศึกษา : 103 คน</span>  
-                                    <a href="student-group-edit.html" class="btn btn-danger btn-sm">จัดการกลุ่ม</a>
-
+                                <h1 class="m-0"> 
+                                    <strong>  นักศึกษาที่ยังไม่มีกลุ่ม</strong> 
                                     <a href="student-group.html" class="float-right">
                                         <i class="fal fa-chevron-left fa-xs"></i> ย้อนกลับ
                                     </a> 
@@ -166,34 +163,23 @@
                 <section class="content">
                     <div class="container-fluid">
                         <div class="div-box card-outline card-info p-4">
-                  
-                            <!-- <ul class="nav nav-tabs" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">รายการที่อนุมัติแล้ว</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#tab2" role="tab" data-toggle="tab">รายการรออนุมัติ <span class="right badge badge-danger">3</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#tab3" role="tab" data-toggle="tab">รายการที่ยกเลิก</a>
-                                </li>
-                            </ul>  -->
+                   
             
                             <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade show active" id="tab1">
-                                    <div class="col-12">  
-                                        <h4>
-                                            <strong>อาจารย์ที่ปรึกษา</strong> 
-                                            <ol>
-                                                <li>ผศ.ดร. เอกชัย ใจดี</li>
-                                                <li>ผศ. นิคม เกษมสาน</li>
-                                            </ol> 
-                                        </h4> 
-
-                                        <hr>
-                                    </div>
-                                    <div class="col-12 search-label">
+                                <div role="tabpanel" class="tab-pane fade show active p-2" id="tab1">
+ 
+                                    <div class="col-12 search-label ">
                                         <div class="row">
+                                            <div class="col-xl-2">
+                                                <label for="">คณะ </label>
+                                                <select class="selectpicker" title="เลือกคณะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>รัฐศาสตร์</option>
+                                                    <option>นิติศาสตร์</option>
+                                                    <option>บริหารธุรกิจ</option>
+                                                    <option>วิทยาลัยดนตรี</option>
+                                                    <option>สถาปัตยกรรมศาสตร์</option>
+                                                </select>
+                                            </div> 
                                             <div class="col-xl-2">
                                                 <label for="">สาขา </label>
                                                 <select class="selectpicker" title="สาขา" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
@@ -227,21 +213,33 @@
 
                                     <br>
 
-                                    <div class="col-12 table-responsive">
+                                    <div class="col-12 table-responsive"> 
+                                        <h4> 
+                                            <a href="#"><u>เลือกทั้งหมด</u></a> / <a href="#"><u>ไม่เลือก</u></a>  
+                                            <a href="#" class="btn btn-success btn-sm pt-2"  >
+                                                <i class="fas fa-plus"></i> เพิ่มเข้ากลุ่ม
+                                            </a>      
+                                        </h4>
                                         <table id="tb-job" class="table table-striped  " style="width:100%">
                                             <thead>
                                                 <tr>
+                                                    <th>&nbsp;</th>
                                                     <th>#</th>
                                                     <th>รหัส</th>
                                                     <th>ชื่อ</th>
                                                     <th>ชั้นปี</th>
                                                     <th>สาขา</th>  
-                                                    <th>สถานะ</th> 
-                                                    <th>&nbsp;</th>
+                                                    <th>สถานะ</th>  
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr> 
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck1" >
+                                                            <label class="custom-control-label" for="customCheck1"></label>
+                                                        </div>
+                                                    </td>
                                                     <td>1</td>
                                                     <td>
                                                         640019930
@@ -253,14 +251,16 @@
                                                     <td>เคมีประยุกต์  </td>
                                                     <td>   
                                                         <span class="text-blue">นักศึกษาปกติ</span> 
-                                                    </td>    
-                                                    <td>
-                                                        <a href="student-description.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="far fa-id-badge"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr>  
+                                                    </td>     
+                                                </tr>    
+                                                
                                                 <tr> 
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck1" >
+                                                            <label class="custom-control-label" for="customCheck1"></label>
+                                                        </div>
+                                                    </td>
                                                     <td>2</td>
                                                     <td>
                                                         640019930
@@ -272,14 +272,16 @@
                                                     <td>เคมีประยุกต์  </td>
                                                     <td>   
                                                         <span class="text-blue">นักศึกษาปกติ</span> 
-                                                    </td>        
-                                                    <td>
-                                                        <a href="student-description.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="far fa-id-badge"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr>  
+                                                    </td>     
+                                                </tr>    
+                                                
                                                 <tr> 
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck1" >
+                                                            <label class="custom-control-label" for="customCheck1"></label>
+                                                        </div>
+                                                    </td>
                                                     <td>3</td>
                                                     <td>
                                                         640019930
@@ -287,18 +289,20 @@
                                                     <td>
                                                         นายอดิศร ศรีสุธรรม
                                                     </td>
-                                                    <td> ชั้นปีที่ 1</td>
+                                                    <td> ชั้นปีที่ 3</td>
                                                     <td>เคมีประยุกต์  </td>
                                                     <td>   
-                                                        <span class="text-red">พักการศึกษา</span>  
-                                                    </td>        
-                                                    <td>
-                                                        <a href="student-description.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="far fa-id-badge"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr>   
+                                                        <span class="text-blue">นักศึกษาปกติ</span> 
+                                                    </td>     
+                                                </tr>    
+                                                
                                                 <tr> 
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck1" >
+                                                            <label class="custom-control-label" for="customCheck1"></label>
+                                                        </div>
+                                                    </td>
                                                     <td>4</td>
                                                     <td>
                                                         640019930
@@ -310,14 +314,16 @@
                                                     <td>เคมีประยุกต์  </td>
                                                     <td>   
                                                         <span class="text-blue">นักศึกษาปกติ</span> 
-                                                    </td>        
-                                                    <td>
-                                                        <a href="student-description.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="far fa-id-badge"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr> 
+                                                    </td>     
+                                                </tr>    
+                                                
                                                 <tr> 
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck1" >
+                                                            <label class="custom-control-label" for="customCheck1"></label>
+                                                        </div>
+                                                    </td>
                                                     <td>5</td>
                                                     <td>
                                                         640019930
@@ -329,14 +335,16 @@
                                                     <td>เคมีประยุกต์  </td>
                                                     <td>   
                                                         <span class="text-blue">นักศึกษาปกติ</span> 
-                                                    </td>        
-                                                    <td>
-                                                        <a href="student-description.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="far fa-id-badge"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr>   
+                                                    </td>     
+                                                </tr>    
+                                                
                                                 <tr> 
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck1" >
+                                                            <label class="custom-control-label" for="customCheck1"></label>
+                                                        </div>
+                                                    </td>
                                                     <td>6</td>
                                                     <td>
                                                         640019930
@@ -347,18 +355,55 @@
                                                     <td> ชั้นปีที่ 3</td>
                                                     <td>เคมีประยุกต์  </td>
                                                     <td>   
-                                                        <span class="text-green">จบการศึกษา</span> 
-                                                    </td>        
+                                                        <span class="text-blue">นักศึกษาปกติ</span> 
+                                                    </td>     
+                                                </tr>    
+                                                
+                                                <tr> 
                                                     <td>
-                                                        <a href="student-description.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="far fa-id-badge"></i>
-                                                        </a> 
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck1" >
+                                                            <label class="custom-control-label" for="customCheck1"></label>
+                                                        </div>
                                                     </td>
-                                                </tr>                                                      
+                                                    <td>7</td>
+                                                    <td>
+                                                        640019930
+                                                    </td>
+                                                    <td>
+                                                        นายอดิศร ศรีสุธรรม
+                                                    </td>
+                                                    <td> ชั้นปีที่ 3</td>
+                                                    <td>เคมีประยุกต์  </td>
+                                                    <td>   
+                                                        <span class="text-blue">นักศึกษาปกติ</span> 
+                                                    </td>     
+                                                </tr>    
+                                                
+                                                <tr> 
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck1" >
+                                                            <label class="custom-control-label" for="customCheck1"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>8</td>
+                                                    <td>
+                                                        640019930
+                                                    </td>
+                                                    <td>
+                                                        นายอดิศร ศรีสุธรรม
+                                                    </td>
+                                                    <td> ชั้นปีที่ 3</td>
+                                                    <td>เคมีประยุกต์  </td>
+                                                    <td>   
+                                                        <span class="text-blue">นักศึกษาปกติ</span> 
+                                                    </td>     
+                                                </tr>                                                    
                                             </tbody> 
                                         </table>
                                     </div>
-                                </div> 
+                                </div>    
                             </div>       
                         </div>
                     </div> 

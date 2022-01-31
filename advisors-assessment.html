@@ -111,17 +111,17 @@
                                 </a> 
                             </li> 
                             <li class="nav-item">
-                                <a href="student-group.html" class="nav-link active">
+                                <a href="student-group.html" class="nav-link ">
                                     <i class="nav-icon fas fa-users"></i>
                                     <p>จัดการกลุ่มนักศึกษา</p>
                                 </a> 
                             </li>  
                             <li class="nav-item">
-                                <a href="advisors-assessment.html" class="nav-link">
+                                <a href="advisors-assessment.html" class="nav-link active">
                                     <i class="nav-icon fas fa-chalkboard-teacher"></i>
                                     <p>ประเมินอาจารย์ที่ปรึกษา</p>
                                 </a> 
-                            </li>  
+                            </li>
                             
                             <li class="nav-item menu-is-opening menu-open">
                                 <a href="#" class="nav-link">
@@ -148,14 +148,10 @@
                 <div class="content-header">
                     <div class="container-fluid">
                         <div class="row mb-2">
-                            <div class="col-sm-12">
+                            <div class="col-sm-6">
                                 <h1 class="m-0">
-                                    <strong> ข้อมูลนักศึกษา  </strong>  
-                                    <a href="student-group-list.html" class="float-right">
-                                        <i class="fal fa-chevron-left fa-xs"></i> ย้อนกลับ
-                                    </a> 
+                                    <strong>ประเมินอาจารย์ที่ปรึกษา</strong>  
                                 </h1> 
-
                             </div>  
                         </div> 
                     </div> 
@@ -165,8 +161,10 @@
                         <div class="div-box card-outline card-info p-4">
                             <div class="col">
                                 <div class="row justify-content-center">
-                                    <div class="col-xl-6 col-12">
+                                    <div class="col-xl-12 col-12">
                                         <form action="">
+                                            <h3><strong>ชื่อกลุ่ม :</strong> RSU-SCIENCE 039-31</h3>
+                                            <h4><strong>ข้อมูลของฉัน</h3>
                                             <div class="form-group form-profile" style="background: url(images/profile.png);"> </div>
                                             <div class="form-group row mb-0">
                                                 <div class="col-xl-2 text-right">
@@ -181,8 +179,7 @@
                                                     <label for="">ชื่อ-นามสกุล :</label> 
                                                 </div>  
                                                 <div class="col-xl-6"> 
-                                                    <label for="">อดิศร ศรีสุธรรม</label>  <br>
-                                                    <label for="">Adisorn Srisutam</label> 
+                                                    <label for="">อดิศร ศรีสุธรรม</label>  
                                                 </div> 
                                             </div> 
                                             <div class="form-group row mb-0">
@@ -229,7 +226,55 @@
                                     </div>
                                 </div>
                             </div>
-                            
+            
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade show active" id="tab1"> 
+                                    <div class="col-12 table-responsive">
+                                        <table id="tb-job" class="table table-striped  " style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>ชื่ออาจารย์ที่ปรึกษา</th>
+                                                    <th>คณะ</th>
+                                                    <th>ภาควิชา</th> 
+                                                    <th>ปีการศึกษา</th>
+                                                    <th>&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr> 
+                                                    <td>1</td>
+                                                    <td>
+                                                        ผศ.ดร. เอกชัย ใจดี
+                                                    </td>
+                                                    <td>
+                                                        วิทยาศาสตร์
+                                                    </td>
+                                                    <td> ภาควิชาเคมี  </td> 
+                                                    <td> 2564  </td> 
+                                                    <td>   
+                                                        <a href="advisors-assessment-form.html" class="btn btn-secondary btn-sm">รอประเมิน</a>   
+                                                    </td>    
+                                                </tr> 
+                                                <tr> 
+                                                    <td>2</td>
+                                                    <td>
+                                                        รศ. อดิศร ศรีสุธรรม 
+                                                    </td>
+                                                    <td>
+                                                        วิทยาศาสตร์
+                                                    </td>
+                                                    <td> คณิตศาสตร์</td> 
+                                                    <td> 2563  </td> 
+                                                    <td>   
+                                                        <a href="advisors-assessment-des.html" class="btn btn-success btn-sm">ประเมินสำเร็จ</a>   
+                                                    </td>    
+                                                </tr>                                                           
+                                            </tbody> 
+                                        </table>
+                                    </div>
+                                </div> 
+                            </div>       
                         </div>
                     </div> 
                 </section> 

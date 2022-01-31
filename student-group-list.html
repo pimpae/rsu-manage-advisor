@@ -117,13 +117,13 @@
                                 </a> 
                             </li>  
                             <li class="nav-item">
-                                <a href="advisors-assessment.html" class="nav-link">
+                                <a href="manage-advisors.html" class="nav-link">
                                     <i class="nav-icon fas fa-chalkboard-teacher"></i>
-                                    <p>ประเมินอาจารย์ที่ปรึกษา</p>
+                                    <p>จัดการอาจารย์ที่ปรึกษา</p>
                                 </a> 
                             </li>  
                             
-                            <li class="nav-item menu-is-opening menu-open">
+                            <li class="nav-item ">
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fas fa-cogs"></i>
                                     <p>
@@ -133,13 +133,37 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="spirit-coin-shop.html" class="nav-link">
+                                        <a href="advisors-assessment-set.html" class="nav-link">
                                             <i class="fas fa-store-alt"></i>
                                             <p>จัดการแบบสอบถามการประเมิน</p>
                                         </a>
                                     </li>  
                                 </ul>
-                            </li>    
+                            </li>   
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-chart-bar"></i> 
+                                    <p>
+                                        รายงาน  
+                                        <i class="fas fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="far fa-user-chart"></i>
+                                            <p>รายงานสถานะภาพนักศึกษา</p>
+                                        </a>
+                                    </li>  
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="far fa-user-chart"></i>
+                                            <p>รายงานผลประเมินอาจารย์ที่ปรึกษา</p>
+                                        </a>
+                                    </li>  
+                                </ul>
+                            </li>     
                         </ul>
                     </nav> 
                 </div> 
@@ -183,11 +207,18 @@
                                 <div role="tabpanel" class="tab-pane fade show active" id="tab1">
                                     <div class="col-12">  
                                         <h4>
+                                            <a href="#" class="float-right text-info" data-toggle="modal" data-target="#myModal">
+                                                <i class="fas fa-paper-plane"></i> ส่ง Notification
+                                            </a> 
+                                            
                                             <strong>อาจารย์ที่ปรึกษา</strong> 
                                             <ol>
                                                 <li>ผศ.ดร. เอกชัย ใจดี</li>
                                                 <li>ผศ. นิคม เกษมสาน</li>
                                             </ol> 
+
+                                            
+                                            
                                         </h4> 
 
                                         <hr>
@@ -373,7 +404,46 @@
         </div>  
 
    
-
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"><strong> ส่ง Notification  </strong></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div> 
+                    <div class="modal-body">
+                        <div class="col"> 
+                            <form action="">
+                                <div class="form-group row">
+                                    <div class="col-xl-12">
+                                        <label for="">หัวข้อ</label>
+                                        <input type="text" class="form-control" name="" id="">
+                                    </div> 
+                                </div>  
+                                <div class="form-group row">
+                                    <div class="col-xl-12">
+                                        <label for="">รายละเอียด</label>
+                                        <textarea class="form-control" name="" id="" cols="30" rows="4"></textarea>
+                                    </div> 
+                                </div>  
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-danger">
+                                        <i class="fas fa-file-upload"></i> อัพโหลดไฟล์
+                                    </button>
+                                </div> 
+                            </form>
+                        </div>
+                    </div> 
+                    <div class="modal-footer">
+                        <div class="col-12 text-center">
+                            <button type="button" class="btn btn-success">ยืนยัน</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         
 

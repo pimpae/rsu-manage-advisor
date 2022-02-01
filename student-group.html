@@ -116,12 +116,13 @@
                                     <p>จัดการกลุ่มนักศึกษา</p>
                                 </a> 
                             </li>  
+                            
                             <li class="nav-item">
-                                <a href="advisors-assessment.html" class="nav-link">
-                                    <i class="nav-icon fas fa-chalkboard-teacher"></i>
-                                    <p>ประเมินอาจารย์ที่ปรึกษา</p>
+                                <a href="student-list.html" class="nav-link">
+                                    <i class="nav-icon far fa-file-search"></i>
+                                    <p>ค้นหานักศึกษา</p>
                                 </a> 
-                            </li>  
+                            </li>   
                             
                             <li class="nav-item ">
                                 <a href="#" class="nav-link">
@@ -204,6 +205,18 @@
                                     <div class="col-12 search-label">
                                         <div class="row">
                                             <div class="col-xl-2">
+                                                <label for="">ปีการศีกษา </label>
+                                                <select class="selectpicker" title="สาขา" data-show-subtext="true" data-live-search="true" name="year"  id="year">  
+                                                    <option>เลือกทั้งหมด</option>
+                                                    <option>2564</option>
+                                                    <option>2563</option>
+                                                    <option>2562</option>
+                                                    <option>2561</option>
+                                                    <option>2560</option>
+                                                </select>
+                                            </div> 
+
+                                            <div class="col-xl-2">
                                                 <label for="">คณะ </label>
                                                 <select class="selectpicker" title="เลือกคณะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
                                                     <option>รัฐศาสตร์</option>
@@ -231,7 +244,8 @@
                                         <table id="tb-job" class="table table-striped  " style="width:100%">
                                             <thead>
                                                 <tr>
-                                                    <th>#</th>
+                                                    <th>#</th> 
+                                                    <th>ID</th>
                                                     <th>ชื่อกลุ่ม</th>
                                                     <th>คณะ</th>
                                                     <th>จำนวนนักศึกษา</th>
@@ -243,6 +257,7 @@
                                             <tbody>
                                                 <tr> 
                                                     <td>1</td>
+                                                    <td>#653393</td>
                                                     <td>
                                                         RSU Science 001
                                                     </td>
@@ -271,6 +286,7 @@
                                                 </tr>    
                                                 <tr> 
                                                     <td>2</td>
+                                                    <td>#653393</td>
                                                     <td>
                                                         RSU Science 001
                                                     </td>
@@ -297,6 +313,7 @@
                                                 </tr>    
                                                 <tr> 
                                                     <td>3</td>
+                                                    <td>#653393</td>
                                                     <td>
                                                         RSU Science 001
                                                     </td>
@@ -324,6 +341,7 @@
                                                 </tr>    
                                                 <tr> 
                                                     <td>4</td>
+                                                    <td>#653393</td>
                                                     <td>
                                                         RSU Science 001
                                                     </td>
@@ -350,6 +368,7 @@
                                                 </tr>    
                                                 <tr> 
                                                     <td>5</td>
+                                                    <td>#653393</td>
                                                     <td>
                                                         RSU Science 001
                                                     </td>
@@ -376,6 +395,7 @@
                                                 </tr>    
                                                 <tr> 
                                                     <td>6</td>
+                                                    <td>#653393</td>
                                                     <td>
                                                         RSU Science 001
                                                     </td>
@@ -403,6 +423,7 @@
                                                 </tr>    
                                                 <tr> 
                                                     <td>7</td>
+                                                    <td>#653393</td>
                                                     <td>
                                                         RSU Science 001
                                                     </td>
@@ -430,6 +451,7 @@
                                                 </tr>    
                                                 <tr> 
                                                     <td>8</td>
+                                                    <td>#653393</td>
                                                     <td>
                                                         RSU Science 001
                                                     </td>
@@ -457,6 +479,7 @@
                                                 </tr>    
                                                 <tr> 
                                                     <td>9</td>
+                                                    <td>#653393</td>
                                                     <td>
                                                         RSU Science 001
                                                     </td>
@@ -484,6 +507,7 @@
                                                 </tr>    
                                                 <tr> 
                                                     <td>10</td>
+                                                    <td>#653393</td>
                                                     <td>
                                                         RSU Science 001
                                                     </td>
@@ -560,7 +584,9 @@
                 $( ".form-email" ).hide(); 
 
                 $('[data-toggle="tooltip"]').tooltip();   
-
+                
+                $( "#tb-job" ).hide(); 
+                
             } );
 
             
@@ -582,6 +608,11 @@
                 todayHighlight: true,
                 format: 'dd/mm/yyyy',
                 toggleActive: true
+            });
+
+            $('select#year').on('change', function(){
+                var selected = $('.selectpicker option:selected').val();
+                $( "#tb-job" ).show(); 
             });
 
         </script>

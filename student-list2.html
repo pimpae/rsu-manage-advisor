@@ -111,78 +111,29 @@
                                 </a> 
                             </li> 
                             <li class="nav-item">
-                                <a href="student-group.html" class="nav-link active">
+                                <a href="advisors.html" class="nav-link ">
                                     <i class="nav-icon fas fa-users"></i>
-                                    <p>จัดการกลุ่มนักศึกษา</p>
-                                </a> 
-                            </li>  
-                            <li class="nav-item">
-                                <a href="advisors-assessment.html" class="nav-link">
-                                    <i class="nav-icon fas fa-chalkboard-teacher"></i>
-                                    <p>ประเมินอาจารย์ที่ปรึกษา
-                                    </p>
+                                    <p>นักศึกษาภายใต้ก่อนดูแล</p>
                                 </a> 
                             </li>  
                             
-                            <li class="nav-item ">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon fas fa-cogs"></i>
-                                    <p>
-                                        การตั้งค่าระบบ  
-                                        <i class="fas fa-angle-left right"></i>
-                                    </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="advisors-assessment-set.html" class="nav-link">
-                                            <i class="fas fa-store-alt"></i>
-                                            <p>จัดการแบบสอบถามการประเมิน</p>
-                                        </a>
-                                    </li>  
-                                </ul>
-                            </li>   
-
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon fas fa-chart-bar"></i> 
-                                    <p>
-                                        รายงาน  
-                                        <i class="fas fa-angle-left right"></i>
-                                    </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <i class="far fa-user-chart"></i>
-                                            <p>รายงานสถานะภาพนักศึกษา</p>
-                                        </a>
-                                    </li>  
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <i class="far fa-user-chart"></i>
-                                            <p>รายงานผลประเมินอาจารย์ที่ปรึกษา</p>
-                                        </a>
-                                    </li>  
-                                </ul>
-                            </li>     
+                                <a href="student-list2.html" class="nav-link active">
+                                    <i class="nav-icon far fa-file-search"></i>
+                                    <p>ค้นหานักศึกษา</p>
+                                </a> 
+                            </li>    
                         </ul>
-                    </nav> 
+                    </nav>  
                 </div> 
             </aside> 
             <div class="content-wrapper"> 
                 <div class="content-header">
                     <div class="container-fluid">
                         <div class="row mb-2">
-                            <div class="col-sm-12">
+                            <div class="col-sm-6">
                                 <h1 class="m-0">
-                                    <strong> ชื่อกลุ่ม </strong>   : RSU Science 001
-                                    <span class="pl-4">คณะ : วิทยาศาสตร์</span>  
-                                    <span class="pl-4">จำนวนนักศึกษา : 103 คน</span>  
-                                    <a href="student-group-edit.html" class="btn btn-danger btn-sm">จัดการกลุ่ม</a>
-
-                                    <a href="student-group.html" class="float-right">
-                                        <i class="fal fa-chevron-left fa-xs"></i> ย้อนกลับ
-                                    </a> 
+                                    <strong>ค้นหานักศึกษา</strong>  
                                 </h1> 
                             </div>  
                         </div> 
@@ -206,26 +157,30 @@
             
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane fade show active" id="tab1">
-                                    <div class="col-12">  
-                                        <h4>
-                                            <a href="#" class="float-right text-info" data-toggle="modal" data-target="#myModal">
-                                                <i class="fas fa-paper-plane"></i> ส่ง Notification
-                                            </a> 
-                                            
-                                            <strong>อาจารย์ที่ปรึกษา</strong> 
-                                            <ol>
-                                                <li>ผศ.ดร. เอกชัย ใจดี</li>
-                                                <li>ผศ. นิคม เกษมสาน</li>
-                                            </ol> 
 
-                                            
-                                            
-                                        </h4> 
-
-                                        <hr>
-                                    </div>
                                     <div class="col-12 search-label">
                                         <div class="row">
+                                            <div class="col-xl-2">
+                                                <label for="">ปีการศีกษา </label>
+                                                <select class="selectpicker" title="สาขา" data-show-subtext="true" data-live-search="true" name="year"  id="year">  
+                                                    <option>2564</option>
+                                                    <option>2563</option>
+                                                    <option>2562</option>
+                                                    <option>2561</option>
+                                                    <option>2560</option>
+                                                </select>
+                                            </div> 
+
+                                            <div class="col-xl-2">
+                                                <label for="">คณะ </label>
+                                                <select class="selectpicker" title="เลือกคณะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>รัฐศาสตร์</option>
+                                                    <option>นิติศาสตร์</option>
+                                                    <option>บริหารธุรกิจ</option>
+                                                    <option>วิทยาลัยดนตรี</option>
+                                                    <option>สถาปัตยกรรมศาสตร์</option>
+                                                </select>
+                                            </div> 
                                             <div class="col-xl-2">
                                                 <label for="">สาขา </label>
                                                 <select class="selectpicker" title="สาขา" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
@@ -237,21 +192,16 @@
                                                 </select>
                                             </div> 
                                             <div class="col-xl-2">
-                                                <label for="">ชื่อ-นามสกุล นักศึกษา </label>
+                                                <label for="">ชื่ออาจารย์ที่ปรึกษา </label>
                                                 <input type="text" class="form-control"  >
                                             </div> 
                                             <div class="col-xl-2">
-                                                <label for="">สถานะ </label>
-                                                <select class="selectpicker" title="สถานะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                    <option>เลือกทั้งหมด</option>
-                                                    <option>นักศึกษาปกติ</option>
-                                                    <option>พักการศึกษา</option>
-                                                    <option>จบการศึกษา</option> 
-                                                </select>
+                                                <label for="">ชื่อ-นามสกุล นักศึกษา </label>
+                                                <input type="text" class="form-control"  >
                                             </div> 
                                             <div class="col-xl-2"> 
                                                 <label class="col-12">&nbsp; </label>
-                                                <button href="form-student-group.html" class="btn btn-primary btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา 
+                                                <button href="form-student-group.html" class="btn btn-primary btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหากลุ่ม
                                                 </button> 
                                             </div> 
                                         </div>
@@ -265,6 +215,7 @@
                                                 <tr>
                                                     <th>#</th>
                                                     <th>รหัส</th>
+                                                    <th>ชื่อกลุ่ม</th>
                                                     <th>ชื่อ</th>
                                                     <th>ชั้นปี</th>
                                                     <th>สาขา</th>  
@@ -278,6 +229,7 @@
                                                     <td>
                                                         640019930
                                                     </td>
+                                                    <td>RSU-ART-20930</td>
                                                     <td>
                                                         นายอดิศร ศรีสุธรรม
                                                     </td>
@@ -297,6 +249,7 @@
                                                     <td>
                                                         640019930
                                                     </td>
+                                                    <td>RSU-ART-20930</td>
                                                     <td>
                                                         นายอดิศร ศรีสุธรรม
                                                     </td>
@@ -316,6 +269,7 @@
                                                     <td>
                                                         640019930
                                                     </td>
+                                                    <td>RSU-ART-20930</td>
                                                     <td>
                                                         นายอดิศร ศรีสุธรรม
                                                     </td>
@@ -335,6 +289,7 @@
                                                     <td>
                                                         640019930
                                                     </td>
+                                                    <td>RSU-ART-20930</td>
                                                     <td>
                                                         นายอดิศร ศรีสุธรรม
                                                     </td>
@@ -354,6 +309,7 @@
                                                     <td>
                                                         640019930
                                                     </td>
+                                                    <td>RSU-ART-20930</td>
                                                     <td>
                                                         นายอดิศร ศรีสุธรรม
                                                     </td>
@@ -373,6 +329,7 @@
                                                     <td>
                                                         640019930
                                                     </td>
+                                                    <td>RSU-ART-20930</td>
                                                     <td>
                                                         นายอดิศร ศรีสุธรรม
                                                     </td>
@@ -405,46 +362,7 @@
         </div>  
 
    
-        <div class="modal fade" id="myModal">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title"><strong> ส่ง Notification  </strong></h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div> 
-                    <div class="modal-body">
-                        <div class="col"> 
-                            <form action="">
-                                <div class="form-group row">
-                                    <div class="col-xl-12">
-                                        <label for="">หัวข้อ</label>
-                                        <input type="text" class="form-control" name="" id="">
-                                    </div> 
-                                </div>  
-                                <div class="form-group row">
-                                    <div class="col-xl-12">
-                                        <label for="">รายละเอียด</label>
-                                        <textarea class="form-control" name="" id="" cols="30" rows="4"></textarea>
-                                    </div> 
-                                </div>  
-                                <div class="form-group">
-                                    <button type="button" class="btn btn-danger">
-                                        <i class="fas fa-file-upload"></i> อัพโหลดไฟล์
-                                    </button>
-                                </div> 
-                            </form>
-                        </div>
-                    </div> 
-                    <div class="modal-footer">
-                        <div class="col-12 text-center">
-                            <button type="button" class="btn btn-success">ยืนยัน</button>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
         
 
@@ -477,7 +395,8 @@
                 $( ".form-email" ).hide(); 
 
                 $('[data-toggle="tooltip"]').tooltip();   
-
+                 
+                $( "#tb-job" ).hide(); 
             } );
 
             
@@ -499,6 +418,11 @@
                 todayHighlight: true,
                 format: 'dd/mm/yyyy',
                 toggleActive: true
+            });
+
+            $('select#year').on('change', function(){
+                var selected = $('.selectpicker option:selected').val();
+                $( "#tb-job" ).show(); 
             });
 
         </script>

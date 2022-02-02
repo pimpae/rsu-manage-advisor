@@ -89,6 +89,10 @@ body{
 .div-box .tab-content .table thead th{
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
+}
+.div-box .tab-content .table thead th:nth-child(2){ 
+  text-align: left;
 }
 .div-box .tab-content .table tbody td{
   font-size: 18px;
@@ -268,13 +272,14 @@ body{
 .form-profile{
   top: 0;
   right: 0;
-  border: 1px solid #EA4C92;
+  border: 2px solid #EA4C92;
   position: absolute;
-  height: 200px;
-  width: 160px;
+  height: 180px;
+  width: 140px;
   background-size: auto 100% !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
+  margin-top: 30px;
 }
 h1.m-0 a{
   font-size: 20px;
@@ -286,4 +291,46 @@ h1.m-0 a{
 .btna .badge{
   position: absolute;
   
+}
+.cm-box{
+  padding-top: 10px;
+  border-top: 1px solid #92b0b3;
+  margin-top: 30px;
+}
+.cm-box .img{
+  margin-top: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 55px;
+  height: 55px;
+  background-size: auto 55px !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  border-radius: 100%;
+  border: 2px solid #EA4C92;
+}
+.cm-box h4{
+  padding-left: 70px;
+  margin-bottom: 0px;
+}
+.cm-box h6{
+  padding-left: 70px;
+  margin-bottom: -5px;
+}
+.cm-box p{ 
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  margin-left: 70px;
+}
+
+.cm-box p.you{
+  color: #fff;
+  background-color:#007bff; 
+}
+.cm-box p.me{
+  background-color: #D2D6DE; 
 }

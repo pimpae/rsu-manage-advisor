@@ -88,8 +88,7 @@ body{
 }
 .div-box .tab-content .table thead th{
   font-size: 20px;
-  font-weight: bold;
-  text-align: center;
+  font-weight: bold; 
 }
 .div-box .tab-content .table thead th:nth-child(2){ 
   text-align: left;
@@ -333,4 +332,23 @@ h1.m-0 a{
 }
 .cm-box p.me{
   background-color: #D2D6DE; 
+}
+.answer{
+  display: none;
+}
+ 
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 8px;
+  left: 25px;
+  transition: 0.2s ease all; 
+  color: #707070;
+}
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+  top: 0px;
+  left: 25px; 
+  font-size: 11px;
+  opacity: 1; 
 }

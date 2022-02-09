@@ -121,7 +121,14 @@
                                     <i class="nav-icon far fa-file-search"></i>
                                     <p>ค้นหานักศึกษา</p>
                                 </a> 
+                            </li>        
+                            <li class="nav-item">
+                                <a href="advisors-report.html" class="nav-link  ">
+                                    <i class="nav-icon far fa-table"></i>
+                                    <p>ผลประเมินอาจารย์ที่ปรึกษา</p>
+                                </a> 
                             </li>  
+                            
                             
                             <li class="nav-item menu-is-opening menu-open ">
                                 <a href="#" class="nav-link active">
@@ -190,7 +197,7 @@
                                     <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">แบบสอบถามการประเมิน</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#tab2" role="tab" data-toggle="tab"> แบบสอบถามการประเมินจากคณะ </a>
+                                    <a class="nav-link" href="#tab2" role="tab" data-toggle="tab"> แบบสอบถามการประเมินเพิ่มเติม</a>
                                 </li> 
                             </ul> 
 
@@ -304,78 +311,294 @@
                                         </table>
                                     </div>
                                 </div> 
-                                <div role="tabpanel" class="tab-pane fade p-2" id="tab2">
-                                    <a href="advisors-assessment-add.html" class="btn btn-success btn-sm pt-2" >
-                                        <i class="fas fa-plus"></i> เพิ่มหัวข้อประเมิน
-                                    </a>
-                                    
-                                    <div class="col-12 table-responsive">
-                                        <table id="tb-job" class="table table-striped  " style="width:100%">
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>หัวข้อประเมิน</th>
-                                                    <th>วันที่เพิ่ม</th>
-                                                    <th>เจ้าหน้าที่เพิ่ม</th> 
-                                                    <th>สถานะใช้งาน</th>
-                                                    <th>&nbsp;</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr> 
-                                                    <td>1</td>
-                                                    <td>
-                                                        มีมนุษย์สัมพันธ์ที่ดีกับนักศึกษา	
-                                                    </td>
-                                                    <td>10/03/2564</td>
-                                                    <td> เอกชัย สุขสม  </td> 
-                                                    <td> 
-                                                        <div class="custom-control custom-switch justify-content-center">
-                                                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
-                                                            <label class="custom-control-label" for="customSwitch1"> </label>
+                                <div role="tabpanel" class="tab-pane fade p-2" id="tab2"> 
+                                    <form class="">                                    
+                                        <div class="form-group row"> 
+                                            <a href="javascript:void(0)" class="btn btn-success btn-sm b-0 questionAdd" id="questionAdd">
+                                                <i class="fas fa-plus"></i> เพิ่มคำถาม
+                                            </a>
+                                        </div>
+                                        <div class="question_main" id="question_main">
+                                            <div class="col qtion" >
+                                                <div class="row">
+                                                    <div class="col-6 hide-chk">
+                                                        <input 
+                                                            type="text" 
+                                                            class="form-control qt" 
+                                                            id="course_name"
+                                                            name="course_name"  
+                                                            required="" 
+                                                            >
+                                                            <span class="floating-label">คำถาม 1</span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <select 
+                                                            class="form-control"
+                                                            id="select_qt"
+                                                            name="select_qt"
+                                                            >
+                                                            <option value="1">คำตอบเป็นข้อความ</option>
+                                                            <option value="2">คำตอบเป็นตัวเลือก</option>
+                                                            <option value="3">คำตอบเป็นตัวเลือก (เลือกได้มากกว่า 1 ข้อ)</option>
+                                                            <option value="4">คำตอบ ใช่ หรือ ไม่</option>
+                                                        </select> 
+                                                    </div>
+    
+                                                    <div class="clearfix">&nbsp;</div> 
+    
+                                                    <div class="col-12" id="answer">
+                                                        <div class="answer" id="answer1">
+                                                            <textarea 
+                                                                class="form-control"  
+                                                                id="explanation"
+                                                                name="explanation" 
+                                                                rows="4" 
+                                                                ></textarea> 
                                                         </div>
-                                                    </td> 
-                                                    <td>   
-                                                        <a href="advisors-assessment-form.html" class="btn btn-danger btn-sm"> <i class="fas fa-pencil-alt fa-md"></i> แก้ไข</a>   
-                                                    </td>    
-                                                </tr>     
-                                                <tr> 
-                                                    <td>2</td>
-                                                    <td>
-                                                        มีมนุษย์สัมพันธ์ที่ดีกับนักศึกษา	
-                                                    </td>
-                                                    <td>10/03/2564</td>
-                                                    <td> เอกชัย สุขสม  </td> 
-                                                    <td> 
-                                                        <div class="custom-control custom-switch justify-content-center">
-                                                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
-                                                            <label class="custom-control-label" for="customSwitch1"> </label>
+                                                        <div class="answer col" id="answer2">
+                                                            <div class="answerx row" id="answer2Ques">
+                                                                <div class="col-1 text-right">
+                                                                    <input 
+                                                                        type="radio" 
+                                                                        class="form-check-input" 
+                                                                        name="place_position" 
+                                                                        >
+                                                                </div>
+                                                         
+                                                                <div class="col-10">
+                                                                    <input 
+                                                                        type="text" 
+                                                                        class="form-control" 
+                                                                        id="course_name"
+                                                                        name="course_name" 
+                                                                        placeholder="ตัวเลือก 1" 
+                                                                        >
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    <a href="#" class="btn btn-danger btn-sm">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </a>
+                                                                </div> 
+                                                            </div>
+    
+                                                            <div class="answerx row" id="answer2Ques">
+                                                                <div class="col-1 text-right">
+                                                                    <input 
+                                                                        type="radio" 
+                                                                        class="form-check-input" 
+                                                                        name="place_position" 
+                                                                        >
+                                                                </div>
+                                                         
+                                                                <div class="col-10">
+                                                                    <input 
+                                                                        type="text" 
+                                                                        class="form-control" 
+                                                                        id="course_name"
+                                                                        name="course_name" 
+                                                                        placeholder="ตัวเลือก 2" 
+                                                                        >
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    <a href="#" class="btn btn-danger btn-sm">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </a>
+                                                                </div> 
+                                                            </div>
+    
+                                                            <div class="answerx row" id="answer2Ques">
+                                                                <div class="col-1 text-right">
+                                                                    <input 
+                                                                        type="radio" 
+                                                                        class="form-check-input" 
+                                                                        name="place_position" 
+                                                                        >
+                                                                </div>
+                                                         
+                                                                <div class="col-10">
+                                                                    <input 
+                                                                        type="text" 
+                                                                        class="form-control" 
+                                                                        id="course_name"
+                                                                        name="course_name" 
+                                                                        placeholder="ตัวเลือก 3" 
+                                                                        >
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    <a href="#" class="btn btn-danger btn-sm">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </a>
+                                                                </div> 
+                                                            </div>
+    
+    
+                                                            <div class="answerx row" id="answer2Ques">
+                                                                <div class="col-1 text-right">
+                                                                    <input 
+                                                                        type="radio" 
+                                                                        class="form-check-input" 
+                                                                        name="place_position" 
+                                                                        >
+                                                                </div>
+                                                         
+                                                                <div class="col-10">
+                                                                    <input 
+                                                                        type="text" 
+                                                                        class="form-control" 
+                                                                        id="course_name"
+                                                                        name="course_name" 
+                                                                        placeholder="ตัวเลือก 4" 
+                                                                        >
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    <a href="#" class="btn btn-danger btn-sm">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </a>
+                                                                </div> 
+                                                            </div>
+    
+                                                            <a href="#" class="addAnswer">เพิ่มตัวเลือก</a>
                                                         </div>
-                                                    </td> 
-                                                    <td>   
-                                                        <a href="advisors-assessment-form.html" class="btn btn-danger btn-sm"> <i class="fas fa-pencil-alt fa-md"></i> แก้ไข</a>   
-                                                    </td>    
-                                                </tr>     
-                                                <tr> 
-                                                    <td>3</td>
-                                                    <td>
-                                                        มีมนุษย์สัมพันธ์ที่ดีกับนักศึกษา	
-                                                    </td>
-                                                    <td>10/03/2564</td>
-                                                    <td> เอกชัย สุขสม  </td> 
-                                                    <td> 
-                                                        <div class="custom-control custom-switch justify-content-center">
-                                                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
-                                                            <label class="custom-control-label" for="customSwitch1"> </label>
+    
+    
+    
+                                                        <div class="answer col" id="answer3">
+                                                            <div class="answerx row" id="answer3Ques">
+                                                                <div class="col-1 text-right">
+                                                                    <input 
+                                                                        type="checkbox" 
+                                                                        class="form-check-input" 
+                                                                        name="place_position" 
+                                                                        >
+                                                                </div>
+                                                         
+                                                                <div class="col-10">
+                                                                    <input 
+                                                                        type="text" 
+                                                                        class="form-control" 
+                                                                        id="course_name"
+                                                                        name="course_name" 
+                                                                        placeholder="ตัวเลือก 1" 
+                                                                        >
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    <a href="#" class="btn btn-danger btn-sm">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </a>
+                                                                </div> 
+                                                            </div>
+    
+                                                            <div class="answerx row" id="answer3Ques">
+                                                                <div class="col-1 text-right">
+                                                                    <input 
+                                                                        type="checkbox" 
+                                                                        class="form-check-input" 
+                                                                        name="place_position" 
+                                                                        >
+                                                                </div>
+                                                         
+                                                                <div class="col-10">
+                                                                    <input 
+                                                                        type="text" 
+                                                                        class="form-control" 
+                                                                        id="course_name"
+                                                                        name="course_name" 
+                                                                        placeholder="ตัวเลือก 2" 
+                                                                        >
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    <a href="#" class="btn btn-danger btn-sm">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </a>
+                                                                </div> 
+                                                            </div>
+    
+                                                            <div class="answerx row" id="answer3Ques">
+                                                                <div class="col-1 text-right">
+                                                                    <input 
+                                                                        type="checkbox" 
+                                                                        class="form-check-input" 
+                                                                        name="place_position" 
+                                                                        >
+                                                                </div>
+                                                         
+                                                                <div class="col-10">
+                                                                    <input 
+                                                                        type="text" 
+                                                                        class="form-control" 
+                                                                        id="course_name"
+                                                                        name="course_name" 
+                                                                        placeholder="ตัวเลือก 3" 
+                                                                        >
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    <a href="#" class="btn btn-danger btn-sm">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </a>
+                                                                </div> 
+                                                            </div>
+    
+                                                            <div class="answerx row" id="answer3Ques">
+                                                                <div class="col-1 text-right">
+                                                                    <input 
+                                                                        type="checkbox" 
+                                                                        class="form-check-input" 
+                                                                        name="place_position" 
+                                                                        >
+                                                                </div>
+                                                         
+                                                                <div class="col-10">
+                                                                    <input 
+                                                                        type="text" 
+                                                                        class="form-control" 
+                                                                        id="course_name"
+                                                                        name="course_name" 
+                                                                        placeholder="ตัวเลือก 4" 
+                                                                        >
+                                                                </div>
+                                                                <div class="col-1">
+                                                                    <a href="#" class="btn btn-danger btn-sm">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </a>
+                                                                </div> 
+                                                            </div>
+    
+                                                            <a href="#" class="addAnswer">เพิ่มตัวเลือก</a>
                                                         </div>
-                                                    </td> 
-                                                    <td>   
-                                                        <a href="advisors-assessment-form.html" class="btn btn-danger btn-sm"> <i class="fas fa-pencil-alt fa-md"></i> แก้ไข</a>   
-                                                    </td>    
-                                                </tr>                                                           
-                                            </tbody> 
-                                        </table>
-                                    </div>
+                                                        <div class="answer" id="answer4">
+                                                            <div class="answerx row" id="answer2Ques">
+                                                                <div class="col-1 text-right">
+                                                                    <input 
+                                                                        type="radio" 
+                                                                        class="form-check-input" 
+                                                                        name="place_position" 
+                                                                        >
+                                                                </div>
+                                                                <label for="">ใช่</label>
+                                                            </div>
+                                                            <div class="answerx row" id="answer2Ques">
+                                                                <div class="col-1 text-right">
+                                                                    <input 
+                                                                        type="radio" 
+                                                                        class="form-check-input" 
+                                                                        name="place_position" 
+                                                                        >
+                                                                </div> 
+                                                                <label for="">ไม่</label>
+                                                            </div>
+                                                        </div>
+    
+                                                        <div class="clearfix">&nbsp;</div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix">&nbsp;</div> 
+                                        </div>
+    
+                                        <div class="col tx-r text-center">
+                                            <a href="#" class="btn btn-info">บันทึก</a>
+                                        </div>
+                                    </form>
                                 </div>
 
                             </div>       
@@ -449,6 +672,16 @@
                 toggleActive: true
             });
 
+
+            $('#select_qt').on('change', function() {
+                $('.answer').hide();
+                $('#answer'+this.value).show();
+            });
+
+            $('#questionAdd').on('click', function() { 
+                $("#question_main").clone().insertAfter("#question_main");  
+            });
+            
         </script>
 
 

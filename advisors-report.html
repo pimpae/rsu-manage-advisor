@@ -96,9 +96,9 @@
                             <img src="images/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                         </div>
                         <div class="info">
-                            <a href="#" class="d-block">เจ้าหน้าที่</a>
+                            <a href="#" class="d-block">นายอดิศร ศรีสุธรรม</a>
                         </div>
-                    </div>   
+                    </div>  
                     <nav class="mt-2">
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
                             <li class="nav-item">
@@ -117,20 +117,20 @@
                                 </a> 
                             </li>  
                             <li class="nav-item">
-                                <a href="student-list.html" class="nav-link  ">
+                                <a href="student-list.html" class="nav-link">
                                     <i class="nav-icon far fa-file-search"></i>
                                     <p>ค้นหานักศึกษา</p>
                                 </a> 
                             </li>   
                             <li class="nav-item">
-                                <a href="student-list.html" class="nav-link ">
-                                    <i class="nav-icon far fa-file-search"></i>
-                                    <p>ค้นหานักศึกษา</p>
+                                <a href="advisors-report.html" class="nav-link active">
+                                    <i class="nav-icon far fa-table"></i>
+                                    <p>ผลประเมินอาจารย์ที่ปรึกษา</p>
                                 </a> 
                             </li>  
                             
-                            <li class="nav-item menu-is-opening menu-open ">
-                                <a href="#" class="nav-link active">
+                            <li class="nav-item ">
+                                <a href="#" class="nav-link">
                                     <i class="nav-icon fas fa-cogs"></i>
                                     <p>
                                         การตั้งค่าระบบ  
@@ -139,7 +139,7 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="advisors-assessment-set.html" class="nav-link active">
+                                        <a href="advisors-assessment-set.html" class="nav-link">
                                             <i class="fas fa-store-alt"></i>
                                             <p>จัดการแบบสอบถามการประเมิน</p>
                                         </a>
@@ -170,6 +170,8 @@
                                     </li>  
                                 </ul>
                             </li>  
+                            
+
                         </ul>
                     </nav> 
                 </div> 
@@ -178,9 +180,9 @@
                 <div class="content-header">
                     <div class="container-fluid">
                         <div class="row mb-2">
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <h1 class="m-0">
-                                    <strong>  เพิ่มหัวข้อประเมิน </strong>  
+                                    <strong>ผลประเมินอาจารย์ที่ปรึกษา</strong>  
                                 </h1> 
                             </div>  
                         </div> 
@@ -188,40 +190,150 @@
                 </div>  
                 <section class="content">
                     <div class="container-fluid">
-                        <div class="div-box card-outline card-info p-4">
-                  
-                            <div class="col">
-                                <div class="row justify-content-center">
-                                    <div class="col-xl-8 col-12">
-                                        <form action="">
-                                            <div class="form-group row">
-                                                <div class="col-xl-2">
-                                                    <label for="">ชื่อหัวข้อแบบประเมิน </label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <textarea type="text" class="form-control"  ></textarea>
-                                                </div> 
+                        <div class="div-box card-outline card-info p-4"> 
+            
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade show active" id="tab1">
+
+                                    <div class="col-12 search-label">
+                                        <div class="row">
+                                            <div class="col-xl-2">
+                                                <label for="">ปีการศีกษา </label>
+                                                <select class="selectpicker" title="สาขา" data-show-subtext="true" data-live-search="true" name="year"  id="year">   
+                                                    <option>2564</option>
+                                                    <option>2563</option>
+                                                    <option>2562</option>
+                                                    <option>2561</option>
+                                                    <option>2560</option>
+                                                </select>
                                             </div> 
 
-                                            <div class="col-12 p-0"> 
-                                                <hr>
-                                            </div>
-                                            
-                                            <div class="form-group row">
-                                                <div class="col-xl-2 col-12"></div> 
-                                                <div class="col-xl-6 col-12"> 
-                                                    <a href="advisors-assessment-set.html" class="btn btn-success">บันทึก</a>
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
-                                                </div>
-                                            </div>   
-
-
-                                        </form>
-
+                                            <div class="col-xl-2">
+                                                <label for="">คณะ </label>
+                                                <select class="selectpicker" title="เลือกคณะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>รัฐศาสตร์</option>
+                                                    <option>นิติศาสตร์</option>
+                                                    <option>บริหารธุรกิจ</option>
+                                                    <option>วิทยาลัยดนตรี</option>
+                                                    <option>สถาปัตยกรรมศาสตร์</option>
+                                                </select>
+                                            </div> 
+                                            <div class="col-xl-2">
+                                                <label for="">ภาควิชา </label>
+                                                <select class="selectpicker" title="เลือกภาควิชา" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>รัฐศาสตร์</option>
+                                                    <option>นิติศาสตร์</option>
+                                                    <option>บริหารธุรกิจ</option>
+                                                    <option>วิทยาลัยดนตรี</option>
+                                                    <option>สถาปัตยกรรมศาสตร์</option>
+                                                </select>
+                                            </div> 
+                                            <div class="col-xl-2">
+                                                <label for="">ชื่ออาจารย์ที่ปรึกษา </label>
+                                                <input type="text" class="form-control"  >
+                                            </div> 
+                                            <div class="col-xl-2"> 
+                                                <label class="col-12">&nbsp; </label>
+                                                <button href="#" class="btn btn-primary btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหากลุ่ม
+                                                </button> 
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
- 
+
+                                    <br>
+
+                                    <div class="col-12 table-responsive">
+                                        <table id="tb-job" class="table table-striped  " style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th> 
+                                                    <th>รหัสอาจารย์</th>
+                                                    <th>ชื่อ-นามสกุล</th> >
+                                                    <th>กลุ่มเรียน</th>
+                                                    <th>นักศึกษาในกลุ่ม</th>  
+                                                    <th>นักศึกษาที่ประเมิน</th>  
+                                                    <th>คะแนน</th>   
+                                                    <th>&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr> 
+                                                    <td>1</td>
+                                                    <td>#629200193</td>
+                                                    <td>รศ. นิคม เกษมสาน  </td>
+                                                    <td>วิทยาศาสตร์ </td>
+                                                    <td>12</td> 
+                                                    <td>5</td> 
+                                                    <td>4.65</td> 
+                                                    <td>   
+                                                        <a href="#" class="btn btn-secondary btn-sm"  >รายละเอียดการประเมิน</a>   
+                                                    </td>    
+                                                </tr>              
+                                                <tr> 
+                                                    <td>2</td>
+                                                    <td>#629200193</td>
+                                                    <td>รศ. นิคม เกษมสาน  </td>
+                                                    <td>วิทยาศาสตร์ </td>
+                                                    <td>12</td> 
+                                                    <td>5</td> 
+                                                    <td>4.65</td> 
+                                                    <td>   
+                                                        <a href="#" class="btn btn-secondary btn-sm"  >รายละเอียดการประเมิน</a>   
+                                                    </td>    
+                                                </tr>    
+                                                <tr> 
+                                                    <td>3</td>
+                                                    <td>#629200193</td>
+                                                    <td>รศ. นิคม เกษมสาน  </td>
+                                                    <td>วิทยาศาสตร์ </td>
+                                                    <td>12</td> 
+                                                    <td>5</td> 
+                                                    <td>4.65</td> 
+                                                    <td>   
+                                                        <a href="#" class="btn btn-secondary btn-sm"  >รายละเอียดการประเมิน</a>   
+                                                    </td>    
+                                                </tr>    
+                                                <tr> 
+                                                    <td>4</td>
+                                                    <td>#629200193</td>
+                                                    <td>รศ. นิคม เกษมสาน  </td>
+                                                    <td>วิทยาศาสตร์ </td>
+                                                    <td>12</td> 
+                                                    <td>5</td> 
+                                                    <td>4.65</td> 
+                                                    <td>   
+                                                        <a href="#" class="btn btn-secondary btn-sm"  >รายละเอียดการประเมิน</a>   
+                                                    </td>    
+                                                </tr>    
+                                                <tr> 
+                                                    <td>5</td>
+                                                    <td>#629200193</td>
+                                                    <td>รศ. นิคม เกษมสาน  </td>
+                                                    <td>วิทยาศาสตร์ </td>
+                                                    <td>12</td> 
+                                                    <td>5</td> 
+                                                    <td>4.65</td> 
+                                                    <td>   
+                                                        <a href="#" class="btn btn-secondary btn-sm"  >รายละเอียดการประเมิน</a>   
+                                                    </td>    
+                                                </tr>    
+                                                <tr> 
+                                                    <td>6</td>
+                                                    <td>#629200193</td>
+                                                    <td>รศ. นิคม เกษมสาน  </td>
+                                                    <td>วิทยาศาสตร์ </td>
+                                                    <td>12</td> 
+                                                    <td>5</td> 
+                                                    <td>4.65</td> 
+                                                    <td>   
+                                                        <a href="#" class="btn btn-secondary btn-sm"  >รายละเอียดการประเมิน</a>   
+                                                    </td>    
+                                                </tr>                                              
+                                            </tbody> 
+                                        </table>
+                                    </div>
+                                </div> 
+                            </div>       
                         </div>
                     </div> 
                 </section> 
@@ -232,8 +344,12 @@
                     <b>Version</b> 1.1
                 </div>
             </footer>  
-        </div>   
-  
+        </div>  
+
+   
+
+
+        
 
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
@@ -251,8 +367,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js" integrity="sha512-cp+S0Bkyv7xKBSbmjJR0K7va0cor7vHYhETzm2Jy//ZTQDUvugH/byC4eWuTii9o5HN9msulx2zqhEXWau20Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
+         
         <script>
             $(document).ready(function() {  
                 $('#tb-job').dataTable({
@@ -263,7 +378,12 @@
                     "bAutoWidth": true 
                 }); 
                 $( ".form-email" ).hide(); 
+
+                $('[data-toggle="tooltip"]').tooltip();   
+
             } );
+
+            
 
             $('input[type=radio][name=rad]').change(function() {
                 if (this.value == '3') {

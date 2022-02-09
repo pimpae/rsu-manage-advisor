@@ -566,10 +566,7 @@
                                             <a href="#"><u>เลือกทั้งหมด</u></a> / <a href="#"><u>ไม่เลือก</u></a>  
                                             <a href="#" class="btn btn-success btn-sm pt-2" data-toggle="modal" data-target="#addgroup" >
                                                 <i class="fas fa-plus"></i> เพิ่มเข้ากลุ่ม
-                                            </a>   
-                                            <a href="#" class="btn btn-info btn-sm pt-2"  data-toggle="modal" data-target="#addever">
-                                                <i class="fas fa-users-medical"></i> เฉลี่ยเข้ากลุ่มที่ยังไม่มีนักศึกษา
-                                            </a>     
+                                            </a>      
                                         </h4>
                                         <table id="tb-job" class="table table-striped  " style="width:100%">
                                             <thead>
@@ -808,6 +805,9 @@
                                             <a href="#" class="btn btn-success btn-sm pt-2"  >
                                                 <i class="fas fa-plus"></i> เพิ่มเข้ากลุ่ม
                                             </a>    
+                                            <a href="#" class="btn btn-info btn-sm pt-2"  data-toggle="modal" data-target="#addever">
+                                                <i class="fas fa-users-medical"></i> เฉลี่ยเข้ากลุ่มที่ยังไม่มีนักศึกษา
+                                            </a>  
                                         </h4>
                                         <table id="tb-job" class="table table-striped  " style="width:100%">
                                             <thead>
@@ -1043,7 +1043,7 @@
         </div>
 
         <div class="modal fade" id="addever">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content">
                     <!-- Modal Header -->
                     <div class="modal-header">
@@ -1053,31 +1053,115 @@
                     <!-- Modal body -->
                     <div class="modal-body">
                         <div class="col">
-                            <form action=""> 
+                            <div class="col-12 table-responsive">
+                                <table id="tb-job" class="table table-striped  " style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th> 
+                                            <th>ID</th>
+                                            <th>ชื่อกลุ่ม</th>
+                                            <th>คณะ</th>
+                                            <th>จำนวนนักศึกษา</th>
+                                            <th>ชื่ออาจารย์ที่ปรึกษา</th>   
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr> 
+                                            <td>1</td>
+                                            <td>#653393</td>
+                                            <td>
+                                                RSU Science 001
+                                            </td>
+                                            <td>
+                                                วิทยาศาสตร์
+                                            </td>
+                                            <td> 103</td>
+                                            <td>
+                                               <ol>
+                                                   <li>ผศ.ดร. เอกชัย ใจดี</li>
+                                                   <li>รศ. นิคม เกษมสาน</li>
+                                                   <li>รศ. อดิศร ศรีสุธรรม</li>
+                                               </ol>
+                                            </td> 
+                                        </tr>    
+                                        <tr> 
+                                            <td>2</td>
+                                            <td>#653393</td>
+                                            <td>
+                                                RSU Science 001
+                                            </td>
+                                            <td>
+                                                วิทยาศาสตร์
+                                            </td>
+                                            <td> 103</td>
+                                            <td>
+                                               <ol>
+                                                   <li>ผศ.ดร. เอกชัย ใจดี</li> 
+                                               </ol>
+                                            </td>   
+                                        </tr>    
+                                        <tr> 
+                                            <td>3</td>
+                                            <td>#653393</td>
+                                            <td>
+                                                RSU Science 001
+                                            </td>
+                                            <td>
+                                                วิทยาศาสตร์
+                                            </td>
+                                            <td> 103</td>
+                                            <td>
+                                               <ol>
+                                                   <li>ผศ.ดร. เอกชัย ใจดี</li>
+                                                   <li>รศ. นิคม เกษมสาน</li>
+                                               </ol>
+                                            </td>    
+                                        </tr>    
+                                        <tr> 
+                                            <td>4</td>
+                                            <td>#653393</td>
+                                            <td>
+                                                RSU Science 001
+                                            </td>
+                                            <td>
+                                                วิทยาศาสตร์
+                                            </td>
+                                            <td> 103</td>
+                                            <td>
+                                               <ol>
+                                                   <li>ผศ.ดร. เอกชัย ใจดี</li> 
+                                               </ol>
+                                            </td>  
+                                        </tr>                                                           
+                                    </tbody> 
+                                </table>
+                            </div>
+
+                            <!-- <form action=""> 
                                 <div class="col">
                                     <div class="row">
-                                        <div class="col-4  mt-3">
+                                        <div class="col-4 mt-3">
                                             <div class="col border border-success p-3 text-center">
                                                 <h6>ชื่อกลุ่ม</h6>
-                                                <h4><strong>RSU Science Math 65#4</strong></h4>
+                                                <h4><strong>RSU Science Math 65#1</strong></h4>
                                                 <h5>จำนวน 21 คน</h5>
                                             </div>
                                         </div>
-                                        <div class="col-4  mt-3">
+                                        <div class="col-4 mt-3">
                                             <div class="col border border-success p-3 text-center">
                                                 <h6>ชื่อกลุ่ม</h6>
-                                                <h4><strong>RSU Science Math 65#4</strong></h4>
+                                                <h4><strong>RSU Science Math 65#2</strong></h4>
                                                 <h5>จำนวน 20 คน</h5>
                                             </div>
                                         </div>
-                                        <div class="col-4  mt-3">
+                                        <div class="col-4 mt-3">
                                             <div class="col border border-success p-3 text-center">
                                                 <h6>ชื่อกลุ่ม</h6>
-                                                <h4><strong>RSU Science Math 65#4</strong></h4>
+                                                <h4><strong>RSU Science Math 65#3 </strong></h4>
                                                 <h5>จำนวน 20 คน</h5>
                                             </div>
                                         </div>
-                                        <div class="col-4  mt-3">
+                                        <div class="col-4 mt-3">
                                             <div class="col border border-success p-3 text-center">
                                                 <h6>ชื่อกลุ่ม</h6>
                                                 <h4><strong>RSU Science Math 65#4</strong></h4>
@@ -1086,7 +1170,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                     <!-- Modal footer -->
@@ -1097,7 +1181,6 @@
                 </div>
             </div>
         </div>
-   
 
 
         

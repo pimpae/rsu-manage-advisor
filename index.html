@@ -11,6 +11,7 @@
         <link rel="icon" type="image/x-icon" href="images/rsu-logo.png">
         <link rel="stylesheet" href="css/adminlte.min.css"> 
         <link rel="stylesheet" href="css/main.css">  
+        <link rel="stylesheet" href="css/Chart.min.css"> 
     </head>
     <body class="hold-transition sidebar-mini layout-fixed">
         <div class="wrapper">
@@ -180,7 +181,75 @@
                 </div>  
                 <section class="content">
                     <div class="container-fluid">
-                         
+                        <div class="row">
+                            <div class="col-lg-3 col-6">
+                                <!-- small box -->
+                                <div class="small-box bg-info">
+                                    <div class="inner">
+                                        <h3>30</h3>
+                                        <p>กลุ่มใหม่ปีการศึกษา 2565 </p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+                            <div class="col-lg-3 col-6">
+                                <!-- small box -->
+                                <div class="small-box bg-success">
+                                    <div class="inner">
+                                        <h3>53 คน</h3>
+                                        <p>นักศึกษาเฉลี่ยต่อกลุ่ม</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="ion ion-stats-bars"></i>
+                                    </div>
+                                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+                            <div class="col-lg-3 col-6">
+                                <!-- small box -->
+                                <div class="small-box bg-warning">
+                                    <div class="inner">
+                                        <h3>86%</h3>
+                                        <p>ผลประเมิน ประจำปี 2564</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="ion ion-pie-graph"></i>
+                                    </div>
+                                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+                            <div class="col-lg-3 col-6">
+                                <!-- small box -->
+                                <div class="small-box bg-danger">
+                                    <div class="inner">
+                                        <h3>65</h3>
+                                        <p> นักศึกษาที่ยังไม่มีกลุ่ม</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="ion ion-person-add"></i>
+                                    </div>
+                                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- ./col -->
+                        </div>
+              
+          
+                        <div class="card p-3"> 
+                            <h3 class="panel-x">รายงานสถานะภาพนักศึกษา</h3>
+                            <div class="panel-b p-3">
+                                <canvas id="myChartTab21" width="400" height="100"></canvas>
+                            </div>                     
+                        </div>
+                    
+                
+
                     </div> 
                 </section> 
             </div> 
@@ -200,6 +269,43 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
   
  
-        <script src="js/adminlte.js"></script> 
+        <script src="js/adminlte.js"></script>  
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <script>
+            var ctx2 = document.getElementById('myChartTab21').getContext('2d');
+            var myChart = new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน' , 'พฤษภาคม' , 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม' , 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'],
+                    datasets: [
+                    {
+                        label: "พักการศึกษา", 
+                        backgroundColor: 'rgba(255, 99, 132, 1)',
+                        data: [1,7,2,3,4,9,5,4,3,2,11,16]
+                    }, 
+                    {
+                        label: "จบการศึกษา",
+                        backgroundColor: 'rgba(75, 192, 192, 1)',
+                        data: [3,4,1,1,2,9,5,6,7,3,8,6]
+                    },
+                    {
+                        label: "สถานะการย้ายกลุ่ม",
+                        backgroundColor: 'rgba(255, 206, 86, 1)',
+                        data: [12,7,14,12,7,1,4,13,4,11,3]
+                    } 
+                ]
+
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
+
     </body>
 </html>

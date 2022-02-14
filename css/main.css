@@ -278,7 +278,7 @@ body{
   background-size: auto 100% !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 h1.m-0 a{
   font-size: 20px;
@@ -351,4 +351,15 @@ input:not(:focus):valid ~ .floating-label{
   left: 25px; 
   font-size: 11px;
   opacity: 1; 
+}
+.des-label-color .form-group > div:nth-child(odd) label{ 
+  font-weight: unset !important;
+}
+.des-label-color .form-group > div:nth-child(even) label{
+ 
+  font-weight: bold;
+}
+.sel-mock{ 
+  max-width: 80px; 
+  margin: auto;
 }

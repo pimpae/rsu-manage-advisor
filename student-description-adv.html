@@ -403,7 +403,7 @@
                                 <div role="tabpanel" class="tab-pane fade" id="tab2"> 
                                     <div class="col">
                                         <h2 class="mt-4 pb-2">
-                                            <strong>เกรดเฉลี่ย : <span class="grade text-success">3.15</span></strong>  
+                                            <strong>เกรดเฉลี่ย : <span class="grade text-success">2.85</span></strong>  
                                             <strong class="pl-5">หน่วยกิต :  54 </strong> 
                                         </h2>  
                                         <hr>
@@ -958,7 +958,16 @@
 
             } );
 
-            
+            $("#mock").change(function() {
+                if(this.checked) {
+                    $( ".span-mock" ).hide();  
+                    $( ".sel-mock" ).show();  
+                }
+                else{
+                    $( ".sel-mock" ).hide();   
+                    $( ".span-mock" ).show();  
+                }
+            });
 
             $('input[type=radio][name=rad]').change(function() {
                 if (this.value == '3') {
@@ -967,7 +976,17 @@
                 else { 
                     $( ".form-email" ).hide();
                 }
-            });  
+            });     
+
+            $('select#sel-mock').on('change', function(){
+                var selected = $('.select#sel-mock option:selected').val(); 
+                if(selected!=0){  
+                    $( ".grade" ).text("3.20");  
+                }  
+                else{
+                    $( ".grade" ).text("2.50");   
+                }
+            });
 
             $('input.date').datepicker({
                 clearBtn: true,

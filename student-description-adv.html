@@ -160,9 +160,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#tab5" role="tab" data-toggle="tab">สถานะการติดล็อก </a>
                                 </li> 
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link" href="#tab5" role="tab" data-toggle="tab">ประวัติการได้ทุนการศึกษา </a>
-                                </li>  -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tab5" role="tab" data-toggle="tab">วินัยนักศึกษา </a>
+                                </li> 
                             </ul> 
                             
                             <div class="tab-content">
@@ -261,7 +261,7 @@
                                                             <label>ชื่อเล่น :</label> 
                                                         </div>  
                                                         <div class="col-xl-6"> 
-                                                            <label>เป้  </label> 
+                                                            <label>-  </label> 
                                                         </div> 
                                                     </div> 
                                                     <div class="form-group row mb-0">
@@ -887,7 +887,41 @@
             </footer>   
         </div>  
 
-   
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"><strong> Take Note  </strong></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div> 
+                    <div class="modal-body">
+                        <div class="col"> 
+                            <form action="">
+                                <div class="form-group row">
+                                    <div class="col-xl-12">
+                                        <label for="">หัวข้อ</label>
+                                        <input type="text" class="form-control" name="" id="">
+                                    </div> 
+                                </div>  
+                                <div class="form-group row">
+                                    <div class="col-xl-12">
+                                        <label for="">รายละเอียด</label>
+                                        <textarea class="form-control" name="" id="" cols="30" rows="4"></textarea>
+                                    </div> 
+                                </div>  
+                            </form>
+                        </div>
+                    </div> 
+                    <div class="modal-footer">
+                        <div class="col-12 text-center">
+                            <button type="button" class="btn btn-success">ยืนยัน</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         
@@ -943,6 +977,10 @@
                 todayHighlight: true,
                 format: 'dd/mm/yyyy',
                 toggleActive: true
+            });
+
+            $('.takex').click(function(){
+                $("#myModal").modal()
             });
 
         </script>

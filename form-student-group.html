@@ -200,7 +200,7 @@
                                                     <label for="">ชื่อกลุ่ม</label> 
                                                 </div>  
                                                 <div class="col-xl-6"> 
-                                                    <input type="text" class="form-control"   >
+                                                    <input type="text" class="form-control" value="RSU-BIS-650001" disabled="disabled"  >
                                                 </div> 
                                             </div> 
 
@@ -209,29 +209,67 @@
                                                     <label for="">คณะ</label> 
                                                 </div>  
                                                 <div class="col-xl-6"> 
-                                                    <select class="selectpicker" title="เลือกคณะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <label for="">บริหารธุรกิจ</label> 
+                                                    <!-- <select class="selectpicker" title="เลือกคณะ" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
                                                         <option>รัฐศาสตร์</option>
                                                         <option>นิติศาสตร์</option>
                                                         <option>บริหารธุรกิจ</option>
                                                         <option>วิทยาลัยดนตรี</option>
                                                         <option>สถาปัตยกรรมศาสตร์</option>
-                                                    </select>
+                                                    </select> -->
                                                 </div>  
                                             </div> 
 
-                                        
                                             <div class="form-group row">
+                                                <div class="col-xl-2">
+                                                    <label for="">ประเภทอาจารย์</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <div class="form-group">
+                                                        <div class="custom-control custom-radio">
+                                                            <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio" checked value="1">
+                                                            <label for="customRadio1" class="custom-control-label">อาจาย์ภายในมหาวิทยาลัย</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" value="2">
+                                                            <label for="customRadio2" class="custom-control-label">อาจารย์พิเศษ</label>
+                                                        </div> 
+                                                    </div> 
+                                                </div>  
+                                            </div> 
+                                        
+                                            <div class="form-group row text1">
                                                 <div class="col-xl-2">
                                                     <label for="">รหัสอาจารย์</label> 
                                                 </div>  
                                                 <div class="col-xl-6"> 
-                                                    
-                                                    <input type="text" class="form-control"   >
+                                                    <select class="selectpicker" title="เพิ่มอาจารย์" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                        <option>58904001 ผศ สมใจ ใจดี </option>
+                                                        <option>58904001 ผศ สมใจ ใจดี </option>
+                                                        <option>58904001 ผศ สมใจ ใจดี </option>
+                                                        <option>58904001 ผศ สมใจ ใจดี </option>
+                                                        <option>58904001 ผศ สมใจ ใจดี </option>
+                                                        <option>58904001 ผศ สมใจ ใจดี </option>
+                                                    </select>
                                                 </div> 
                                                 <button href="form-student-group.html" class="btn btn-primary btn-sm pt-2 ">  
-                                                    <i class="far fa-search"></i> ค้นหา
+                                                    <i class="fal fa-plus"></i> เพิ่ม
                                                 </button>
                                             </div> 
+
+                                            <div class="form-group row text2">
+                                                <div class="col-xl-2">
+                                                    <label for="">เพิ่มชื่ออาจารย์</label> 
+                                                </div>  
+                                                <div class="col-xl-6">  
+                                                    <input type="text" class="form-control"  placeholder="เพิ่มชื่ออาจารย์พิเศษ"  >
+                                                </div> 
+                                                <button href="form-student-group.html" class="btn btn-primary btn-sm pt-2 ">  
+                                                    <i class="fal fa-plus"></i> เพิ่มอาจารย์พิเศษ
+                                                </button>
+                                            </div> 
+
+
 
                                             <div class="form-group row">
                                                 <div class="col-xl-2"> 
@@ -325,6 +363,7 @@
                     "bAutoWidth": true 
                 }); 
                 $( ".form-email" ).hide(); 
+                $( ".text2" ).hide(); 
             } );
 
             $('input[type=radio][name=rad]').change(function() {
@@ -344,6 +383,18 @@
                 todayHighlight: true,
                 format: 'dd/mm/yyyy',
                 toggleActive: true
+            });
+ 
+
+            $('input[type=radio][name=customRadio]').change(function() { 
+                if (this.value == 1) {  
+                    $( ".text2" ).hide(); 
+                    $( ".text1" ).show();  
+                }
+                else if (this.value == 2) {  
+                    $( ".text1" ).hide(); 
+                    $( ".text2" ).show();  
+                }  
             });
 
         </script>

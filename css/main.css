@@ -65,7 +65,7 @@ body{
 }
 .div-box .nav.nav-tabs .nav-item .nav-link{
   border-radius: 0px !important;
-  min-width: 150px !important;
+  min-width: 130px !important;
   font-size: 20px;
   text-align: center !important;
   background-color: #E0E0E0;

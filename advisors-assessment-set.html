@@ -185,12 +185,15 @@
                 <div class="content-header">
                     <div class="container-fluid">
                         <div class="row mb-2">
-                            <div class="col-sm-6">
+                            <div class="col-12">
                                 <h1 class="m-0">
                                     <strong>จัดการแบบสอบถามส่วนกลาง</strong>  
-                                    <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-success btn-sm pt-2" >
-                                        <i class="fas fa-plus"></i> สร้างแบบประเมิน
-                                    </a>
+                                    <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-success btn-xs pt-2" >
+                                        <i class="fas fa-plus"></i> สร้างแบบประเมินประจำปีการศึกษา
+                                    </a>  
+                                    <!-- <a href="#" class="btn btn-danger btn-xs pt-2 float-right" >
+                                        <i class="fas fa-paper-plane"></i> ส่งอีเมลแจ้งเตือนนักศึกษาให้ประเมิน
+                                    </a> -->
                                 </h1> 
                             </div>  
                         </div> 
@@ -236,29 +239,17 @@
                                                     </td>
                                                     <td>10/01/2565</td>
                                                     <td>30/03/2565</td> 
-                                                    <td><span class="text-primary">อยู่ระหว่างการประเมิน</span> </td> 
+                                                    <td><span class="text-primary">รอดำเนินการ</span> </td> 
                                                     <td>  
                                                         <a href="advisors-assessment-list.html" class="btn btn-primary btn-sm"> 
-                                                             <i class="far fa-lock"></i> ดูรายละเอียด </a>   
+                                                               ดูรายละเอียด 
+                                                        </a>   
                                                     </td>    
                                                 </tr>  
                                                 <tr> 
                                                     <td>2</td>
                                                     <td>
-                                                        ประจำปีการศึกษา 2/2564
-                                                    </td>
-                                                    <td>30/03/2565</td>
-                                                    <td>30/04/2565</td> 
-                                                    <td><span class="text-danger">รอการประเมิน</span> </td> 
-                                                    <td>  
-                                                        <a href="advisors-assessment-list.html" class="btn btn-danger btn-sm"> 
-                                                            <i class="fas fa-pencil-alt fa-md"></i> แก้ไข </a>   
-                                                    </td>    
-                                                </tr>  
-                                                <tr> 
-                                                    <td>3</td>
-                                                    <td>
-                                                        ประจำปีการศึกษา 1/2564
+                                                        ประจำปีการศึกษา 2563
                                                     </td>
                                                     <td>10/01/2564</td>
                                                     <td>30/03/2564</td> 
@@ -266,7 +257,19 @@
                                                     <td>  
                                                         <a href="#" class="btn btn-success btn-sm"> ดูรายละเอียด </a>   
                                                     </td>    
-                                                </tr>   
+                                                </tr>      
+                                                <tr> 
+                                                    <td>3</td>
+                                                    <td>
+                                                        ประจำปีการศึกษา 2563
+                                                    </td>
+                                                    <td>10/01/2564</td>
+                                                    <td>30/03/2564</td> 
+                                                    <td><span class="text-success">สิ้นสุดการประเมิน</span> </td> 
+                                                    <td>  
+                                                        <a href="#" class="btn btn-success btn-sm"> ดูรายละเอียด </a>   
+                                                    </td>    
+                                                </tr>    
                                                 <tr> 
                                                     <td>4</td>
                                                     <td>
@@ -278,7 +281,7 @@
                                                     <td>  
                                                         <a href="#" class="btn btn-success btn-sm"> ดูรายละเอียด </a>   
                                                     </td>    
-                                                </tr>                                                             
+                                                </tr>                                                           
                                             </tbody> 
                                         </table>
                                     </div> 
@@ -709,26 +712,18 @@
                         <div class="col">
                             <form>
                                 <div class="form-group row">
-                                    <div class="form-check-inline">
-                                        <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" name="quest" value="1">
-                                            <strong class="h3">แบบสอบถามประจำปีการศึกษา</strong>
-                                        </label>
-                                    </div>
-                                    <div class="form-check-inline">
-                                        <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="quest" value="2">
-                                            <strong class="h3">แบบสอบถามรายเทอม</strong>
-                                        </label>
-                                    </div>
+                                    <h4>เลือกแบบสอบถามตั้งต้น</h4>
                                 </div>
-                                <div class="form-group trem row">
+                                <div class="form-group   row">
                                     <div class="col-md-6 col-12">
                                         <select name="trem" id="trem" class="form-control">
                                             <option select disabled></option>
-                                            <option>1/2565</option>
-                                            <option>2/2565</option>
-                                            <option>S/2565</option>
+                                            <option>แบบสอบถามประจำปีการศึกษา 2563</option>
+                                            <option>แบบสอบถามประจำปีการศึกษา 2562</option>
+                                            <option>แบบสอบถามประจำปีการศึกษา 2561</option>
+                                            <option>แบบสอบถามประจำปีการศึกษา 2560</option>
+                                            <option>แบบสอบถามประจำปีการศึกษา 2559</option>
+                                            <option>แบบสอบถามประจำปีการศึกษา 2558</option>
                                         </select>
                                     </div>
                                 </div>
